@@ -56,23 +56,23 @@ const PlaceTime = () => {
           </div>
         </AnimationOnScroll>
 
-        {/* <div className=" "> */}
-        {/* <div > */}
-        <AnimationOnScroll className="gmap_canvas ratio ratio-1x1" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
+        {/* <div className="gmap-rounded"> */}
+        <AnimationOnScroll className="gmap-rounded ratio ratio-1x1" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
+          {/* <div > */}
           <iframe
-            onClick={handleOpenMaps}
+            className="gmap-rounded"
             title="Maps Rama Shinta Ballroom"
-            // width="400"
-            // height="400"
+            width="350"
+            height="350"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=rama%20shinta%20ballroom&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
             marginWidth="0"
-          ></iframe>
+          />
+          {/* </div> */}
         </AnimationOnScroll>
-        {/* </div> */}
         {/* </div> */}
 
         <AnimationOnScroll animateIn="animate__zoomIn" animateOut="animate__zoomOut">

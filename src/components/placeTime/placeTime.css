@@ -88,3 +88,7 @@
   width: 400px;
   border-radius: 15px;
 }
+
+.gmap-rounded {
+  border-radius: 15px;
+}
