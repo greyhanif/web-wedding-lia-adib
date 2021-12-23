@@ -1,14 +1,14 @@
 .bg-hero {
-  background-image: url("https://lh3.googleusercontent.com/fife/AAWUweVwArme80ky-bQ24MNrMipseMAQmR2LkGC-yoEyuqcy58R1NafJWEPJIxVbVxEgbgSeL_FfhiMDfYYzvJGngPisgtcTlLK70q-RWxiAelecMMzEbe9uPU-PMIw8NA8E_y25cL84tS6M33drcv4ggIpOcnqBcBdSAGSXd5ibYBvJYETEE8_BjpfGbuwOSYYxpQ71_acNoQkdSPEoXxI-xbRc3ltag4oTw7kBLSI2cxZehtQYpkWtzS_nbH6wO5vHDZTgqyAF4tNUJ55br9LN8U8qXnw6nwfFrBNVsZBM7NkybR7mLK8dldtzgw25rsy7f-rFhzO1laGlan-MNSBfuAaTcACx8-BYKnZLsE8RJubmE-OzmbOennsC5AadOgF7N_aVdaZ2Lod1tsVSKS03y__xaNnKrYfNsbpJC0Pj0xJlzN1X3yik2S-QwHux8a2ixH3eTS5cUl5-GuJxpwKvnrJXSnvegryvfXD0cMakgqXkN_pQ4YmNIOsTaOZLi6lnYyYSRoj-WcJISlIww4H2vO41UAkABh6MAcxMZWFX-MRR6feC7Nzi8fHvoQsr7_dXbmmEY5A-_I3TER3YCA4cC68tuz6k-kFU_22me_2LYgJsTzJeXZhy4qVDISkwk6fOUrlBk_To-lhopxH9kLLmasIh98exceVqRATydUilVXVCeh4yxlCzfmBr_Xo004sYU1sXrWV3JmWDrUa7cqnWL90HN7uiCQ2cAA=w2000-h2000-ft");
-  background-size: cover;
+  /* background-image: url("https://lh3.googleusercontent.com/fife/AAWUweVsoEqU5dn6ERVF5864vprv_uvBgBuvTlajfZwoJVSl4jTk7nn6GZx4aVc0M1_SZGnECzmdc3vbidAcalgBbr9_fOZntQq8N3AoxMKQr3w2XV5_CDUr1Q3am_9mxb0wCoQyZyrvcCU3jaUJNnaSX2iE-JoiO3xdybHvI7kd3de5yWOMP-MixzlbQ1NGgrOYIg1div-SgB4huYgfpiwdzkqyMmS_N7F9_woJrJKH3FjCaycWqHDMuuJaZe1ooW2OahYl7VfvFUBFBZWTlre9lUeaW6hxCiWM6AkUOy4LrFhW7Bvu8W-YEROrsB1GEe_O2WQktiKgIGKuY0vNMhchLjGdpbOooiN9UN0okT9orXktqhJkAkJk2TZap_iVOCz2ih6JP-F2Tx4cmdgE-9UAi7mfU8vTTfU63xfrt3eEAEVLNAdOZsVPFxK_bdPWu_t8AMTV59VCC1ghzjnIcMWq5-6j17ZYQ--aPaSafgM06JFTIMI2eorsvmKzRAcTHHoSFdLxSzJ54xDog3EzfN4PYcm-hq1WKf3kcpObSgJJbDcKySplSFabvjd6v0YDN9hLzkOK-UG6qysu-rIUjebY0d0Z6A0nDyM-6IkvJuUiz0YtwkrnUfbLyU6PidPE9mKwbnF5sAqsiXf0kH_F_CJwUKn3oPntwDaaHGWU7qT0UYOhoobvaoxCiYeitlvQwmnH_xZt9iD7SotXiib2VaezWEvr3A3b8fcFjA=w2000-h2000-ft"); */
+  /* background-size: cover; */
   /* height: 100vh; */
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  object-position: -10% 0;
+  object-position: center;
 
   /* background-color: #fcf8f1; */
   /* background-size: cover; */
@@ -38,4 +38,17 @@
 .wrapper-content-hero {
   top: 7rem;
   height: 50vh;
+  /* mix-blend-mode: difference; */
+}
+.name-hero {
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 2.5rem;
+  color: rgb(180, 136, 78);
+}
+
+.img-hero {
+  width: 100%;
+  height: auto;
 }

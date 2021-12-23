@@ -1,6 +1,5 @@
 import React from "react";
 import "./divider.css";
-import dividerAtasBawah from "../../assets/images/element/atas-bawah.png";
 
 const Divider = () => {
   return (

@@ -63,28 +63,32 @@ const BsList = () => {
   const [msgNull, setMsgNull] = useState([]);
   const [idState, setIdState] = useState(sessionStorage.getItem("id"));
   const [nameState, setNameState] = useState(sessionStorage.getItem("name"));
-  const [cityState, setCityState] = useState(sessionStorage.getItem("city"));
+  const [cityState, setCityState] = useState({
+    name: "Nama Kota",
+  });
   const [messageState, setMessageState] = useState("");
   const [confirmState, setConfirmState] = useState("yes");
   // console.log(name);
 
-  useEffect(async () => {
+  useEffect(() => {
     let mounted = true;
     setLoading(true);
-    await axios.get(`${process.env.REACT_APP_API_URL}/messages/`).then((res) => {
-      if (mounted) {
-        setLoading(false);
-        setMessageList(res.data);
-      }
-    });
-    return function cleanup() {
+    fetchDataMessages();
+    return function cleanup(mounted) {
       mounted = false;
     };
-  }, [msg]);
+  }, []);
+
+  const fetchDataMessages = async () => {
+    await axios.get(`${process.env.REACT_APP_API_URL}/messages/`).then((res) => {
+      setLoading(false);
+      setMessageList(res.data);
+    });
+  };
 
   useEffect(async () => {
     let mounted = true;
-    sendMessage();
+    // sendMessage();
     makeid();
     getDataM();
     alertMsg();
@@ -274,7 +278,7 @@ const BsList = () => {
               <label htmlFor="subject">Pesan & Do'a</label>
             </div>
             <div className="col-75">
-              <textarea value={messageState} onChange={(event) => setMessageState(event.target.value)} id="subject" name="subject" placeholder="Write something.."></textarea>
+              <textarea value={messageState} onChange={(event) => setMessageState(event.target.value)} id="subject" name="subject" placeholder="*ex: SaMaWa 🤲🏻🎉😊 . . ."></textarea>
             </div>
             <div className="col-25">
               {loading ? (

@@ -1,12 +1,9 @@
 import React from "react";
 import "./placeTime.css";
 
-import { useNavigate } from "react-router-dom";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const PlaceTime = () => {
-  let navigate = useNavigate();
-
   const handleOpenMaps = () => {
     // navigate(`https://goo.gl/maps/C9LyEqk7ou3fnDfo9`);
     window.open("https://goo.gl/maps/C9LyEqk7ou3fnDfo9");
@@ -51,19 +48,32 @@ const PlaceTime = () => {
             <div className="text-center box-rounded mb-5">
               <div className="card-header title-calendar bold">Lokasi</div>
               <div className="card-body p-3">
-                <h6 className="card-title title-calendar">Hotel Patra Semarang & Convention</h6>
-                <h5 className="place-detail card-title">Rama Shinta Ballroom</h5>
+                <h6 className="title-calendar">Hotel Patra Semarang & Convention</h6>
+                <h5 className="place-detail">Rama Shinta Ballroom</h5>
                 <p className="title-calendar">Wonotingal, Candisari, Kota Semarang, Jawa Tengah, 50252</p>
               </div>
             </div>
           </div>
         </AnimationOnScroll>
 
-        <div className="mapouter ratio ratio-1x1">
-          <div className="gmap_canvas">
-            <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=rama%20shinta%20ballroom&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
-          </div>
-        </div>
+        {/* <div className=" "> */}
+        {/* <div > */}
+        <AnimationOnScroll className="gmap_canvas ratio ratio-1x1" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
+          <iframe
+            onClick={handleOpenMaps}
+            title="Maps Rama Shinta Ballroom"
+            // width="400"
+            // height="400"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=rama%20shinta%20ballroom&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+          ></iframe>
+        </AnimationOnScroll>
+        {/* </div> */}
+        {/* </div> */}
 
         <AnimationOnScroll animateIn="animate__zoomIn" animateOut="animate__zoomOut">
           <div className="text-center">

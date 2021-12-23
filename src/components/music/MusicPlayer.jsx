@@ -1,11 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import useSound from "use-sound";
+
 import "./musicPlayer.css";
 import music from "../../assets/audio/web/edsheran-perfect.mp3";
-import { isPlayState } from "../../store/index";
-import { useRecoilState } from "recoil";
-import { Howl, Howler } from "howler";
+
+import { Howl } from "howler";
 
 const sound = new Howl({
   src: [music],
