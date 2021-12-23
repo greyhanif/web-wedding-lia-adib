@@ -1,0 +1,165 @@
+.section-2 {
+  display: flex;
+  height: 100vh;
+  /* background-color: #fcf7f1; */
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  /* margin-bottom: 4rem; */
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  /* bottom: 2rem; */
+  /* top: 7rem; */
+  /* top: 12vh; */
+  z-index: 2;
+}
+
+.caption-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 0.2rem;
+  /* color: #666666; */
+}
+
+.caption-detail {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.8em;
+  margin: 0;
+  /* color: #666666; */
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  /* height: 32rem; */
+  height: 65vh;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* min-width: 100%; */
+  /* height: 32rem; */
+  /* min-width: 100vh;
+  height: 100vh; */
+}
+
+.img-slide {
+  width: 100%;
+  /* height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* object-fit: none;
+  object-position: center; */
+}
+
+.pickgradient {
+  position: relative;
+  display: inline-block;
+}
+.pickgradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vh;
+  height: 35vh;
+  display: inline-block;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(252, 247, 240, 0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(252, 247, 240, 0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(107, 15, 16, 100) 100%); /* W3C */
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); W3C */
+}
+
+.pickgradient-top {
+  position: relative;
+  display: inline-block;
+}
+.pickgradient-top:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vh;
+  height: 100vh;
+  display: inline-block;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(252, 247, 240, 0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(252, 247, 240, 0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* IE10+ */
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(107, 15, 16, 100) 100%); W3C */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* rotate: 180deg; */
+}
+
+.overlay-header {
+  position: absolute;
+  /* display: inline-block; */
+  /* margin: 20px; */
+  left: 0;
+  top: 4rem;
+  /* margin-bottom: 600px; */
+  /* mix-blend-mode: difference; */
+  z-index: 2;
+}
+
+.the-wedding-of {
+  font-family: "Libre Caslon Text", serif;
+  /* font-size: 0.6em; */
+  font-size: 0.8em;
+  margin: 0;
+  /* color: #aaaaaa; */
+  color: #dddddddd;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.lia-adib {
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  /* font-size: 1.8rem; */
+  font-size: 2.5rem;
+  color: burlywood;
+  margin-bottom: 3px;
+}
+
+.date-header-top {
+  font-family: "Libre Caslon Text", serif;
+  /* font-size: 0.6em; */
+  font-size: 0.8rem;
+  margin: 0;
+  color: #dddddddd;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.bg-section-gallery {
+  background-color: #6b0f10;
+  /* background-image: url("../../assets/images/web/jumbotron.jpg"); */
+  /* background-image: url("../../assets/images/element/bg-cover.png");
+background-size: cover; */
+}
+
+/* .overlay-header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 50vh;
+  display: inline-block;
+} */
+
+/* CUSTOMIZE SVG
+-------------------------------------------------- */

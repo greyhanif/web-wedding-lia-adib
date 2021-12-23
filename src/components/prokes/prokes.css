@@ -1,0 +1,33 @@
+.icon-prokes {
+  width: 65px;
+  /* height: 1.75em; */
+  /* size: 1.75em; */
+}
+
+.icon-prokes-card {
+  width: 100px;
+
+  /* height: 1.75em; */
+  /* size: 1.75em; */
+}
+
+.bg-prokes {
+  background-color: #fcf8f2;
+}
+
+.bg-card-prokes {
+  background-color: #fcf8f1;
+}
+
+.title-prokes {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.9em;
+  color: #666666;
+  line-height: 1.1rem;
+}
+
+.detail-prokes {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #666666;
+}

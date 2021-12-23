@@ -1,0 +1,22 @@
+.bg {
+  background-color: #fcf8f1;
+  /* background-image: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"); */
+}
+
+.date-timeline {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.4rem;
+  color: #6b0f10;
+  margin-bottom: 2rem;
+}
+
+.detail-timeline {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.4rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}

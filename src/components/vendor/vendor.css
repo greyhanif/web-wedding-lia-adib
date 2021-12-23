@@ -1,0 +1,28 @@
+.bg-vendor {
+  background-color: #fcf8f2;
+}
+.icon-vendor {
+  width: 75px;
+  /* height: 1.75em; */
+  /* size: 1.75em; */
+}
+
+.vendor-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.8rem;
+  color: #444444;
+  line-height: 1.2em;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.vendor-desc {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.7em;
+  color: #666666;
+  line-height: 1.2em;
+  margin: 0;
+  font-weight: lighter;
+  /* visibility: hidden; */
+}

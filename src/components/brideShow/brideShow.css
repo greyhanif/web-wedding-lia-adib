@@ -1,0 +1,53 @@
+.bride {
+  color: #d5ad6d; /*if no support for background-clip*/
+
+  background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bride-name {
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: burlywood;
+}
+
+.ucapan {
+  font-size: 0.8rem;
+  font-family: "Libre Caslon Text", serif;
+  color: #fcf8f1;
+}
+
+.detail {
+  font-family: "Libre Caslon Text", serif;
+  color: #fcf8f1;
+  font-size: 0.9em;
+}
+
+.bg-bride-show {
+  background-color: #6b0f10;
+  /* background-image: url("../../assets/images/web/jumbotron.jpg"); */
+  /* background-image: url("../../assets/images/element/bg-cover.png"); */
+  /* background-size: cover; */
+}
+
+.btn-theme {
+  color: #6b0f10;
+}
+
+.bismillah {
+  color: #fcf8f1;
+}
+
+.wrapper-bride-show {
+  background-color: #550003;
+  /* background-image: url("../../assets/images/web/jumbotron.jpg"); */
+  background-image: url("../../assets/images/element/bg-cover.png");
+  background-size: cover;
+  border-radius: 30px;
+  padding: 1rem;
+  /* box-shadow: 5px 5px 8px 8px #3f0103; */
+}

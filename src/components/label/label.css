@@ -1,0 +1,33 @@
+.bg-label {
+  background-color: #fcf8f1dd;
+  /* background-image: url("../../assets/images/web/jumbotron.jpg"); */
+  background-image: url("../../assets/images/element/bg-cover.png");
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.label-logo-bride-name {
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  font-size: 1.9rem;
+  color: burlywood;
+  margin-top: 1rem;
+  /* : 3rem; */
+}
+
+.label-wrap {
+  padding: 0.8rem;
+}
+
+.label-title {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: #444444dd;
+}
+
+.label-desc {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222222dd;
+  line-height: 1.1rem;
+}

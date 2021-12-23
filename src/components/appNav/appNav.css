@@ -1,0 +1,26 @@
+.c-primary {
+  color: #422004;
+  background-color: blue;
+}
+
+.nav-name {
+  font-size: 1.5rem;
+  color: #422004;
+  font-family: "Great Vibes", cursive;
+  display: flexbox;
+  padding-top: 5px;
+}
+
+.nav-name-child {
+  display: flexbox;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-name {
+    font-size: 1.3rem;
+    color: #422004;
+    font-family: "Great Vibes", cursive;
+    display: flexbox;
+    padding-top: 5px;
+  }
+}

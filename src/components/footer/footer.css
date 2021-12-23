@@ -1,0 +1,60 @@
+.bg-footer {
+  /* background-color: #6b0f10; */
+  background-color: #6b0f10;
+  /* background-image: url("../../assets/images/web/jumbotron.jpg"); */
+  /* background-image: url("../../assets/images/element/bg-cover.png");
+  background-size: cover; */
+}
+
+.icon-footer {
+  width: 75px;
+  /* height: 1.75em; */
+  /* size: 1.75em; */
+}
+
+.title-footer {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.2em;
+  color: burlywood;
+  line-height: 1.2em;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.detail-footer {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.9em;
+  color: #fcf8f1;
+  line-height: 1.4em;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.copyright-footer {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.7em;
+  color: #fcf8f1;
+  line-height: 1.2em;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.legend-footer {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.9em;
+  color: #fcf8f1;
+  padding: 0;
+  margin: 0;
+}
+
+.value-count {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.3em;
+  color: #6b0f10;
+  margin: 0;
+}
+
+.box-countdown {
+  padding: 0;
+}

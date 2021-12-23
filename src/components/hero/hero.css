@@ -1,0 +1,41 @@
+.bg-hero {
+  background-image: url("https://lh3.googleusercontent.com/fife/AAWUweVwArme80ky-bQ24MNrMipseMAQmR2LkGC-yoEyuqcy58R1NafJWEPJIxVbVxEgbgSeL_FfhiMDfYYzvJGngPisgtcTlLK70q-RWxiAelecMMzEbe9uPU-PMIw8NA8E_y25cL84tS6M33drcv4ggIpOcnqBcBdSAGSXd5ibYBvJYETEE8_BjpfGbuwOSYYxpQ71_acNoQkdSPEoXxI-xbRc3ltag4oTw7kBLSI2cxZehtQYpkWtzS_nbH6wO5vHDZTgqyAF4tNUJ55br9LN8U8qXnw6nwfFrBNVsZBM7NkybR7mLK8dldtzgw25rsy7f-rFhzO1laGlan-MNSBfuAaTcACx8-BYKnZLsE8RJubmE-OzmbOennsC5AadOgF7N_aVdaZ2Lod1tsVSKS03y__xaNnKrYfNsbpJC0Pj0xJlzN1X3yik2S-QwHux8a2ixH3eTS5cUl5-GuJxpwKvnrJXSnvegryvfXD0cMakgqXkN_pQ4YmNIOsTaOZLi6lnYyYSRoj-WcJISlIww4H2vO41UAkABh6MAcxMZWFX-MRR6feC7Nzi8fHvoQsr7_dXbmmEY5A-_I3TER3YCA4cC68tuz6k-kFU_22me_2LYgJsTzJeXZhy4qVDISkwk6fOUrlBk_To-lhopxH9kLLmasIh98exceVqRATydUilVXVCeh4yxlCzfmBr_Xo004sYU1sXrWV3JmWDrUa7cqnWL90HN7uiCQ2cAA=w2000-h2000-ft");
+  background-size: cover;
+  /* height: 100vh; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  object-position: -10% 0;
+
+  /* background-color: #fcf8f1; */
+  /* background-size: cover; */
+}
+
+.pickgradient {
+  position: relative;
+  display: inline-block;
+}
+.pickgradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vh;
+  height: 35vh;
+  display: inline-block;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(252, 247, 240, 0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(252, 247, 240, 0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(107, 15, 16, 100) 100%); /* W3C */
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); W3C */
+}
+
+.wrapper-content-hero {
+  top: 7rem;
+  height: 50vh;
+}

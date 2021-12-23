@@ -1,0 +1,90 @@
+.bg-button {
+  background-color: #411f04;
+  color: #fcf8f1;
+}
+
+.text-color-light {
+  color: #fcf8f1;
+}
+
+.bg-place-time {
+  /* background-color: #fcf8f1; */
+  /* background-image: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"); */
+  background-color: #6b0f10;
+  /* background-image: url("../../assets/images/web/jumbotron.jpg"); */
+  /* background-image: url("../../assets/images/element/bg-cover.png");
+  background-size: cover; */
+}
+
+.wrapper-place-time {
+  background-color: #550003;
+
+  background-image: url("../../assets/images/element/bg-cover.png");
+  background-size: cover;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.title-calendar {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.9em;
+}
+
+.date-value {
+  font-family: "Libre Caslon Text", serif;
+  color: #6b0f10;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.detail-place-time {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.8em;
+  margin: 0;
+  color: #666666;
+}
+
+.detail-place-time-day {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 0.8em;
+  margin: 0;
+  color: #6b0f10;
+  letter-spacing: 1px;
+}
+
+.place-detail {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.5em;
+  color: #6b0f10;
+  font-weight: lighter;
+}
+
+.box-shadow {
+  background-color: #fcf8f1;
+  border-radius: 15px;
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.3), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.box-rounded {
+  border-radius: 15px;
+  background-color: #fcf8f1;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+}

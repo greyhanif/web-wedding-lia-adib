@@ -1,0 +1,155 @@
+/* The Modal (background) */
+.modal-qr {
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: #fcf7f1; /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+
+  /* text-align: center; */
+  margin-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content-qr {
+  text-align: center;
+  /* border: 1px solid #888; */
+  width: 100%;
+  top: 0vh;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  position: absolute;
+  z-index: 3;
+}
+
+.button {
+  padding: 20px;
+  margin: 10px;
+  bottom: 0%;
+}
+
+/* .container {
+  margin-left: 1mm;
+  margin-top: 2.5mm;
+  text-align: center;
+} */
+
+.bride {
+  font-family: "Great Vibes", cursive;
+  font-size: 34px;
+}
+.wedding {
+  font-size: 20px;
+  font-family: SF Pro Mono;
+}
+
+.name {
+  font-family: SF Pro Text;
+  /* color: #422004; */
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.city {
+  font-size: 18px;
+}
+
+.title-name {
+  font-family: SF Pro Text;
+  color: #535353;
+  font-size: 1.5mm;
+  font-weight: 100;
+}
+
+.top-border {
+  background-color: #6b0f10;
+}
+
+.card-qr {
+  /* width: 85.6mm;
+    height: 53.98mm; */
+  height: 515px;
+  width: 330px;
+  border-radius: 2mm;
+  background-color: #fcf7f1;
+  background-image: url("./bg-cover.png");
+  background-size: cover;
+  margin-bottom: 40px;
+  /* margin-top: 35px;
+  margin-left: 25px; */
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.qr {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.title-card-qr {
+  margin-top: 12px;
+  /* margin-left: 5mm; */
+}
+
+.pass-card {
+  font-weight: bold;
+  font-size: 28px;
+  background-color: #6b0f10;
+  color: #fcf7f1;
+  text-align: center;
+  height: 60px;
+  border-top-left-radius: 2mm;
+  border-top-right-radius: 2mm;
+  padding: 8px;
+}
+
+.code-ticket {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.code {
+  font-family: FXMatrix105MonoPica;
+  font-size: 2mm !important;
+}
+
+.line {
+  /* border-style: dotted; */
+  /* border-width: 0.1mm; */
+}
+
+.mt-2 {
+  margin-top: 1mm;
+}
+.size10 {
+  font-size: 1mm;
+}
+.bold {
+  font-weight: bold;
+}
+
+.corner-left-top-element {
+  width: 30mm;
+  height: 30mm;
+  position: absolute;
+  opacity: 40%;
+}
+
+.corner-righ-bottom-element {
+  width: 30mm;
+  height: 30mm;
+  /* position: absolute; */
+  opacity: 40%;
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+}
