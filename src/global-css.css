@@ -17,10 +17,6 @@ html {
   margin: 0;
 }
 
-body {
-  /* min-height: 100vh; */
-}
-
 .header-title-section {
   font-family: "Libre Caslon Text", serif;
   font-size: 1.6rem;
