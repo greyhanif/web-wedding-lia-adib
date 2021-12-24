@@ -37,8 +37,9 @@ app.get("/rsvp/to/:slug", (request, response) => {
     }
     const slug = request.params.slug;
     // const contacts = await axios.get(`http://localhost:5000/apps/` + slug);
-    const contacts = axios.post(`https://api.liaadib-weddingday.id/apps/` + slug);
-    console.log(contacts);
+    const contacts = await axios.get(`https://api.liaadib-weddingday.id/apps/${slug}`);
+    // console.log(contacts);
+    console.log(contacts.data);
     console.log(slug);
     if (contacts.data.msg === "no data available") {
       return res.status(404).send("Post not found");
