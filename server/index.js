@@ -16,11 +16,32 @@ const indexPath = path.resolve(__dirname, "..", "build", "index.html");
 // static resources should just be served as they are
 app.use(express.static(path.resolve(__dirname, "..", "build"), { maxAge: "30d" }));
 
+// app.get("/*", (req, res, next) => {
+//   fs.readFile(indexPath, "utf8", async (err, htmlData) => {
+//     if (err) {
+//       console.error("Error during file reading", err);
+//       return res.status(404).end();
+//     } else if (!req.params) {
+//       // inject meta tags
+//       htmlData = htmlData
+//         .replace("<title>Undangan Pernikahan Lia & Adib | 22 Januari 2022</title>", `<title>Kepada Static</title>`)
+//         .replace("__META_DESCRIPTION__", `Kepada Static`)
+//         .replace("__META_OG_TITLE__", `Kepada Static`)
+//         .replace("__META_OG_DESCRIPTION__", `Kepada Static`)
+
+//         .replace("__META_OG_IMAGE__", `Kepada Static`);
+//       return res.send(htmlData);
+//     }
+//   });
+// });
+
 app.get("/rsvp/to/:slug", (req, res, next) => {
   fs.readFile(indexPath, "utf8", async (err, htmlData) => {
+    const slug = req.params.slug;
     if (err) {
       console.error("Error during file reading", err);
       return res.status(404).end();
+    } else if (!slug) {
     }
     // get post info
     // const contacts = axios.post(`https://api.liaadib-weddingday.id/apps/` + slug);
@@ -37,10 +58,11 @@ app.get("/rsvp/to/:slug", (req, res, next) => {
 
       // inject meta tags
       htmlData = htmlData
-        .replace("<title>Undangan Pernikahan Lia & Adib</title>", `<title>Kepada ${name}</title>`)
+        .replace("<title>Undangan Pernikahan Lia & Adib | 22 Januari 2022</title>", `<title>Kepada ${name}</title>`)
+        .replace("__META_DESCRIPTION__", `Kepada ${name}`)
         .replace("__META_OG_TITLE__", `Kepada ${name}`)
         .replace("__META_OG_DESCRIPTION__", `Kepada ${name}`)
-        .replace("__META_DESCRIPTION__", `Kepada ${name}`)
+
         .replace("__META_OG_IMAGE__", `Kepada ${name}`);
       return res.send(htmlData);
     }
