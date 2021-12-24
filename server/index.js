@@ -44,9 +44,10 @@ app.get("/rsvp/to/:slug", (req, res, next) => {
     } else if (!slug) {
     }
     // get post info
-    // const contacts = axios.post(`https://api.liaadib-weddingday.id/apps/` + slug);
+    //
     const slug = req.params.slug;
-    const contacts = await axios.get(`http://localhost:5000/apps/` + slug);
+    // const contacts = await axios.get(`http://localhost:5000/apps/` + slug);
+    const contacts = axios.post(`https://api.liaadib-weddingday.id/apps/` + slug);
     console.log(contacts.data);
     console.log(slug);
     if (contacts.data.msg === "no data available") {

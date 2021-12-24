@@ -36,7 +36,8 @@ app.get("/rsvp/to/:slug", (request, response) => {
       return res.status(404).end();
     }
     const slug = request.params.slug;
-    const contacts = await axios.get(`http://localhost:5000/apps/` + slug);
+    // const contacts = await axios.get(`http://localhost:5000/apps/` + slug);
+    const contacts = axios.post(`https://api.liaadib-weddingday.id/apps/` + slug);
     console.log(contacts);
     console.log(slug);
     if (contacts.data.msg === "no data available") {
@@ -48,7 +49,6 @@ app.get("/rsvp/to/:slug", (request, response) => {
 
       data = data.replace(/\$OG_TITLE/g, `Lia & Adib Wedding Day | 22.01.2022`);
       data = data.replace(/\$OG_DESCRIPTION/g, `Kepada ${name} di ${city}`);
-      //   result = data.replace(/\$OG_IMAGE/g, "https://i.imgur.com/V7irMl8.png");
       data = data.replace(/\$OG_URL/g, `https://liaadib-weddingday.id/rsvp/to/${slug}`);
       result = data.replace(
         /\$OG_IMAGE/g,
