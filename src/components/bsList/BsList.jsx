@@ -239,7 +239,7 @@ const BsList = () => {
             <div className="col-25">
               <label htmlFor="country">Kabupaten / Kota</label>
             </div>
-            <div className="">
+            <div className="col-75">
               {/* <select id="country" name="country" onChange={(event) => setCityState(event.target.value)} value={cityState}>
                 {cities.map((option) => (
                   <option key={option.id} value={option.name}>

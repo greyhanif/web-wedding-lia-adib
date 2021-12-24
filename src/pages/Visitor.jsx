@@ -23,13 +23,11 @@ import Countdown from "../components/countdown/Countdown";
 const Visitor = () => {
   return (
     <div>
-      {/* <Intro /> */}
-      {/* <AppNav /> */}
       <BasicModal />
       <Hero />
       <Divider />
       <Content />
-      {/* <DividerBottom /> */}
+
       <DividerImage
         src={
           "https://lh3.googleusercontent.com/fife/AAWUweVLf_zAHsGZ1X_1_ooXs9z4FnK7KlYDHiIybt7gcON96q2Y6-21SxuKe3poJyM1IwIlQKfjKeruKXU1jREDGVgEOQ1m_wDIoG481ew7MsdzXDFcoDYiV7tLczi3Xb9dhlPdQiZnAjO3V6AL0fH8xOfhygmfPpqB3rJmVAx8ZsGq0QOL1jQowuBcG5HfsJ9W3ckTldIf91WUDi51FMkTsbVAYlGPBKIvF5X951jAyx_3YzVOXt4nTIQ5BftHnxWn645Ia_9AW3Q79dT7Nx3f1YH8w6LsyapNKmECzbReCNbAG4xXh0PZcYryRlcrombaOmM9IoSkiC4v3_glUE-97WEZwYs67xxMqRMpNnM9vwAyu3mtgwh5a4BuFV_FaHc1ibhOlJH9WuLBEOMUS46iqbg1dZfLae7Y2hmcwNo-0CwIlXdh_y8gg2vj9DE1XYyYdfPf54gc9Xt9ud1vGDvXuPZp__mWWw5eiY6WfxaH4qZAwuNNb2ZFfhavep-SEV9r0LXM1ncBoAVve0-KvUd6MjDhKUM4KhEd9EnWMhaB45lCdzmb9iq9pwG-O2vTqNHCcfxsSqBPN-oHhlJppbPJOJsumBDtOEciUMmegDIYqCAdfz0nE_IZ6M_YV8qRKYsuuEE2JsdvU2SF38G5MRP-Vo3fs8LnvHnKjofKV5sgDo1eBa51BN5Y73INKsVj2J_Ho3Z_JPV8pjZFPb0XrAcJWlsH0LBshFPdIw=w1022-h975-ft"

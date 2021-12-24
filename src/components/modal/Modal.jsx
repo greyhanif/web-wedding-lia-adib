@@ -43,7 +43,7 @@ export default function BasicModal() {
                   "https://lh3.googleusercontent.com/fife/AAWUweXPZGEzY6fIUTX_OhGLYkscdmiOhcvrQEgXFCplnCRb3ieb3WIqbsiWW0f-n2AauNlIArMy4Z8bn0_nsDQBZ8-KZ0JKlKcn2BYfZ-PWQef2JQTh5ng_6Y1C5zwJsUrmdZHQIbQhGFEkLBr2tBAjysY28K7NJ7aCh0RjNf-bLk74Xer__54XRxrDK0aamFvTDAwE5JV4s_8gEfJdKywdZuuPrhvz0fUMKekJeWBp2-uNCdaef2ODyilJeynPBCvG3lg--LWgapy02ojQQGwmz4-u8kwMTXSqlTMEHwP4GCIEKcqXLCioTCqEz51Shq2QU9fQEtwM_kY_tB1vk_2VbnOLFJKeaPHaLsAvqUEs3qOXhPQNffizqJhubbQFO7lQfJmIOON9wbzor5jNlJY30lpUKUQ5yl2TqRnVCW2uvIGraerO47IYCzDhU5CkSv1spDbfs-TFZHZw9bVgxpbBTLOjNHg3UUv1JeroWYBLgi2JK3ve3PDlrC37KsvlCH_nxaTqUE4vvyinTKxDJVLeNsjB47Lxj5-hnmbkn9n76JtjJ1ilSOn68pn3C-A_5vJgUT9DD1MlKrMO15XGDs9QCGDs2qrr4zCOzHIZ-H1guoO67sOyH1rpXjAveaYVM5J1e154vLutjb7sijbv5JqeBlJaGlvKCo3nC6L19EzVZDlGh2zGyVsl-rqiLkloPqzazlsJI4fY1YRwTqoARYhsYq8P9T0xaX3r9Q=w2000-h2000-ft"
                 }
               />
-              <div className="overlay-header carousel-caption   animate__animated animate__zoomIn">
+              <div className="mb-5 carousel-caption animate__animated animate__zoomIn">
                 <div className="">
                   <div className="modal-title animate__animated animate__backInDown">UNDANGAN PERNIKAHAN</div>
                   <div className="modal-bride-name animate__animated animate__backInLeft">Lia & Adib</div>
