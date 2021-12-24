@@ -40,7 +40,7 @@ const Jumbotron = () => {
   return (
     <div className="bg-section-gallery" id="section-jumbotron">
       <AnimationOnScroll className="p-5" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
-        <div className="px-4 text-center mt-2">
+        <div className="px-4 text-center mt-4">
           <h1 className="header-title-section-dark">Galeri</h1>
           <div className="col-lg-6 mx-auto">
             <p className="header-desc-section-dark">Momen kebersamaan</p>
