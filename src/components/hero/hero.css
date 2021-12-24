@@ -63,6 +63,6 @@
 /* Heart beat animation */
 @keyframes beat {
   to {
-    transform: scale(1);
+    transform: scale(1.1);
   }
 }
