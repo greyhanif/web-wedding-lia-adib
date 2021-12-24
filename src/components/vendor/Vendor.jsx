@@ -34,7 +34,15 @@ const Vendor = () => {
         </AnimationOnScroll>
         <AnimationOnScroll className="row" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
           <div className="col-6 mb-4">
-            <img className="img-thumbnail icon-vendor flex-shrink-0" src={"https://lh3.googleusercontent.com/a-/AOh14GjJI3DTYnf9vUlPn51S-7_b8_p-4J8RkmREXTFq=s512-p-k-rw-no"} alt="Maudy Makeup" width="100" height="100" />
+            <img
+              className="img-thumbnail icon-vendor flex-shrink-0"
+              src={
+                "https://lh3.googleusercontent.com/fife/AAWUweUZHSRx9RZw8u_rqRtHlrDE6N_CWgSbk-w8Qpx6GjSojqLoERhlKnnEbF2k0kW7GdgMSCvWbEVh--q1Ct3Kgu718srpwOuWPkG0eHjtddZN8lRxXbNTdXudX2Nx5iTawJQsFaZzrN_R11Ut7D-k92h1VjzChYzurQYhYbNrNU5wPIM6lH6ZTZTUvrsld2DFp9du0B3LtqWoXlZ9pFho0UGruprUCh2yQtgAKoNTNUTcps3R2iD3Iytdv0Qjd3DzXsWhfJHHJrapw7SwFhbytsYBOlDs2vOziaE0MSEMZhqkDRbV_57m6JXxzbKSoLZ9LEUDUFghn49pbv3S0dC0nVhmr4X2ajdVT0hGDgf5ba3WPQIe60j1eggcHyGeuzLHOwvrKW1BeJd_sFi6TMz6kyPzEqkOPkqCLBqw9y9Ov0nrX4BJCJ4xaUQKC_z3p6FST6JAm05C6-jjidp84tF2sjOcXkG_Th1IK3s2C-X4PHqIleL8COI3RBoXurBwAnZ86uK_QGGQyhwGEcHLbJn_jk8rHmF66XBXRxluFmsxU1R07hiZjeSNoMslDFCBnzVmQGDLzN1fkzOXlPqjjPycvSceOqexh2UZcF3Bj8URonhlbTb6dwvvpdU_nJnNq--cUeeCxHhUNXa1eyEFIXprzfLt8kqLeOblp9imNFFGZo2iPnRs86V6hIYy1jH0OT4GW_6SI_fWy8c163_6K8OHzl_M7AsOesr8iw=w346-h216-k-ft"
+              }
+              alt="Maudy Makeup"
+              width="100"
+              height="100"
+            />
             <div>
               <h4 className="vendor-title">Maudy Makeup</h4>
               <p className="vendor-desc">MUA & Wardrobe</p>
@@ -50,7 +58,15 @@ const Vendor = () => {
         </AnimationOnScroll>
         <AnimationOnScroll className="row" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
           <div className="col-6 mb-4">
-            <img className="img-thumbnail icon-vendor flex-shrink-0 " src={"https://yt3.ggpht.com/ytc/AKedOLSq6Ot_jSWertLkhsmhjC03VVUo2fRPeS6RtnBz=s512-c-k-c0x00ffffff-no-rj"} alt="Hanny Dekor" width="100" height="100" />
+            <img
+              className="img-thumbnail icon-vendor flex-shrink-0 "
+              src={
+                "https://lh3.googleusercontent.com/fife/AAWUweWu0YzOjBmWYVh27pfZsx4S1GBDRpNSdhQOFRV4oGPWkRWbG00nMoSuCycuAGsjVggyj2NU5SgZ3hw7_P5xYd9mskQaMvN3bSPNyUCYEAwk-6kidYKRLck8wCv54NpGjihMlSM2klJx0_CJYTE8pSuTjRREQtqkAB6JA8Tib2cWuT69XNFZHnUI8RZ0IqS_PNnuCdCg-vVgOH5kIwbCdkT9CVcv7ozYH6QGPoNbsTKGRqZjs8OUpoZj98lxv95sRf-DE_xSo9hKay17F9xRAfb3UZmaw2e8ogpWGoaFyynR9ocPQXqXaDCSmTdEI8o45EMT3SCvEYiuBIt9JCIuEbCs9gLzynMYaWeahXdfQyM8OITaFGUS6WxkWVaMgnbnG_phnnXATy-Eog1uAyYPJSAZ6-1tv0J9WOZ_OoCRF6nTAIFCeegEHUdPot_WER8OTRSpn5jqeWqNgrdNlQPkK8s0kgbFzABiAWNqxSu_nzyciJGKhi0nh_VuG1aX-au3SWnNStj2OL76SS9EHIRouNOqIiu4ERJ9s1OTVA9eOVkHLokC7d8OyzBnd6qKOrPnehQ22CCJBWOpJP925gAgoXLpeYOCyDbo8jln-2pPp0n0ybj_MCcNYydj6KNT6I-EXkAklWdeEiKOz1PajC_sCHq9TBF8Pix7pCQkqRHf1T3E5zFFb0IOzhZMc7KwgImsSagloTykJXwgKaCmOjHCxO_B1ZG3HYHylA=w346-h216-k-ft"
+              }
+              alt="Hanny Dekor"
+              width="100"
+              height="100"
+            />
             <div>
               <h4 className="vendor-title">Hanny Dekorasi</h4>
               <p className="vendor-desc">Dekorasi ruangan</p>

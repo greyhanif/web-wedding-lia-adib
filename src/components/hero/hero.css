@@ -52,3 +52,17 @@
   width: 100%;
   height: auto;
 }
+
+.heart {
+  /* font-size: 150px; */
+  /* color: #e00; */
+  animation: beat 1s infinite alternate;
+  transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat {
+  to {
+    transform: scale(1);
+  }
+}

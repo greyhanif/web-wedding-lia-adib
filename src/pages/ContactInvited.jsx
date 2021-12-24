@@ -63,6 +63,7 @@ export default function ContactInvited() {
     <div>
       <BasicModal />
       <UserNav />
+      <Hero />
       <Divider />
       <Content />
       {/* <DividerBottom /> */}
