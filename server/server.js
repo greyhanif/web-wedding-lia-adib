@@ -6,7 +6,7 @@ const fs = require("fs");
 const axios = require("axios");
 
 app.get("/", function (request, response) {
-  console.log("Home page visited!");
+  console.log(`[UMUM] - Seseorang membuka halaman utama`);
   const filePath = path.resolve(__dirname, "..", "build", "index.html");
 
   // read in the index.html file
@@ -28,7 +28,7 @@ app.get("/", function (request, response) {
 });
 
 app.get("/rsvp/to/:slug", (request, response) => {
-  console.log("About page visited!");
+  // console.log("About page visited!");
   const filePath = path.resolve(__dirname, "..", "build", "index.html");
   fs.readFile(filePath, "utf8", async (err, data) => {
     if (err) {
@@ -39,8 +39,8 @@ app.get("/rsvp/to/:slug", (request, response) => {
     // const contacts = await axios.get(`http://localhost:5000/apps/` + slug);
     const contacts = await axios.get(`https://api.liaadib-weddingday.id/apps/${slug}`);
     // console.log(contacts);
-    console.log(contacts.data);
-    console.log(slug);
+    // console.log(contacts.data);
+
     if (contacts.data.msg === "no data available") {
       return res.status(404).send("Post not found");
     } else {
@@ -55,6 +55,7 @@ app.get("/rsvp/to/:slug", (request, response) => {
         /\$OG_IMAGE/g,
         "https://lh3.googleusercontent.com/fife/AAWUweW2uF1ek3mg6ES1EQirjpqwr9KrpqfuTJOVfEqL7P9dVIzVRvjuyJXtrKsySZOOGQ8wQ84BLyyOesu2hvEQNqZhoeMwtU04Nl6wxkgvqYC_mJa6A2WyUjBpBdmy7CgNCb6D5fOe-OKsfs2ABfw6kVi3nrpARF7mbq0CK-C_lwutW39Yj_LkdZzLLc1zyNj2Q14yPiACD_6Bt7kqyDcXsXAMR7gZdVJksbl5Xl5kgxqFPvCGY8RP0hmhlIpaGfuLXlhbWHyZ0lLNcHjPMOANtNYreyuG9EB0iH6RPp3_9FbzIMLKtzd6M_0sbyV1T3wJOi-POozVQhfK8RnkgYWvyBskaWRC61YIfnabkNTb2qvb_90TWctEpWSw4uG2yZYAQaLOf41yD0eRsuN3dS7aoTzh8CYBOYlXEV6hoqMbIoqBDckKtxcamrsYvDrtEW4YRgcLPRf_kBWuMtnwB06ArA8A8lquR2ari5rkY9DSAG59Oj1Tvn_ensFqm6AuR0vekQFe1Lw9Wr6pkRksGpSbIpR9pc_cXdVe8W7aF2ZKtJTKDZiZl2xM0BBxqDeZcc2vxq-V3BsJEks2hbhJ3XQ7dMj1FxMYxkQAHpRDwPdD5Wd6LDSzVjO3JfbMM2YiG1kwwHc_p5PMo13GfyfzYJbYCKL3KSDSmYslq_dM7mRFi3boLkIUSuPtx7_6Vxu8a33u7sRPuBchuIJ3w0qYF0JxkZ9_ZIXOWfdFzw=w562-h935-ft"
       );
+      console.log(`[RSVP] - ${name} dari ${city} membuka halaman khusus`);
       response.send(result);
     }
   });
