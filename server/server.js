@@ -42,7 +42,7 @@ app.get("/rsvp/to/:slug", (request, response) => {
     // console.log(contacts.data);
 
     if (contacts.data.msg === "no data available") {
-      return res.status(404).send("Post not found");
+      return response.status(404).send("Post not found");
     } else {
       let name = contacts.data.contacts[0].name;
       let city = contacts.data.contacts[0].city;
