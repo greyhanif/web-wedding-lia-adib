@@ -39,7 +39,7 @@ app.get("/rsvp/to/:slug", (req, res, next) => {
   fs.readFile(indexPath, "utf8", async (err, htmlData) => {
     const slug = req.params.slug;
     if (err) {
-      console.error("Error during file reading", err);
+      console.error(`${moment().local().format("HH:mm:ss")} Error during file reading`, err);
       return res.status(404).end();
     } else if (!slug) {
     }
