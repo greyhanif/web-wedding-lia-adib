@@ -16,7 +16,7 @@ const TimeLine = () => {
         {/* <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> */}
         <h1 className="header-title-section">Susunan Acara</h1>
         <div className="col-lg-6 mx-auto">
-          <p className="header-desc-section">Perjalanan selama 11 tahun</p>
+          <p className="header-desc-section"></p>
         </div>
       </div>
       <Timeline position="alternate">
@@ -66,6 +66,18 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent>
             <p className="detail-timeline">Resepsi</p>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            <p className="date-timeline">13.00</p>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <p className="detail-timeline">Selesai</p>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

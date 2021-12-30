@@ -106,6 +106,13 @@ const Vendor = () => {
         </AnimationOnScroll>
         <AnimationOnScroll className="row" animateIn="animate__zoomIn" animateOut="animate__zoomOut">
           <div className="col-6 mb-4">
+            <img className="img-thumbnail icon-vendor flex-shrink-0" src={"https://play-lh.googleusercontent.com/m_GBD9c4YnYCx17BcqKvq3wVcZUXKjvaNPqV6Mf4jIrUGuaC1bChZnyMmXPHdrMgaUA=w200"} alt="Wis" width="100" height="100" />
+            <div>
+              <h4 className="vendor-title">Sukoraras</h4>
+              <p className="vendor-desc">Hiburan gamelan</p>
+            </div>
+          </div>
+          <div className="col-6 mb-4">
             <img className="img-thumbnail icon-vendor flex-shrink-0" src={"https://womeninstandards.org/wp-content/uploads/2020/03/WiS-Logo-V2.png"} alt="Wis" width="100" height="100" />
             <div>
               <h4 className="vendor-title">Wis</h4>

@@ -63,9 +63,7 @@ const BsList = () => {
   const [msgNull, setMsgNull] = useState([]);
   const [idState, setIdState] = useState(sessionStorage.getItem("id"));
   const [nameState, setNameState] = useState(sessionStorage.getItem("name"));
-  const [cityState, setCityState] = useState({
-    name: "Nama Kota",
-  });
+  const [cityState, setCityState] = useState("");
   const [messageState, setMessageState] = useState("");
   const [confirmState, setConfirmState] = useState("yes");
   // console.log(name);
@@ -168,6 +166,13 @@ const BsList = () => {
     return confirm;
   };
 
+  const ListMessagesComp = async () => {
+    await axios.get(`${process.env.REACT_APP_API_URL}/messages/`).then((res) => {
+      setLoading(false);
+      setMessageList(res.data);
+    });
+  };
+
   return (
     <div className="p-3 bg-section-chat">
       <div className="px-4 text-center mt-4">
@@ -181,11 +186,8 @@ const BsList = () => {
           <div key={c.id} href="#" className=" like-chat mb-2">
             <div className="d-flex w-100 justify-content-between ">
               <p className="contact-name" style={{ color: `#${makeid(3)}` }}>
-                {/* <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" className="mt-1 bi-person-circle me-1" viewBox="0 0 16 16">
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                  <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                </svg> */}
-                + {c.name}
+                {/* <p className="contact-name" style={{ color: `#6b0f10` }}> */}+ {c.name}
+                {console.log("re render")}
               </p>
               <p className={`legend-chat ${formatConfirm(c.willBePresent).color}`}>{formatConfirm(c.willBePresent).value}</p>
             </div>
@@ -231,7 +233,11 @@ const BsList = () => {
               <label htmlFor="fname">Nama Lengkap</label>
             </div>
             <div className="col-75">
-              <input value={nameState} onChange={(event) => setNameState(event.target.value)} className="input-name" type="name" id="fname" name="firstname" placeholder="Your name. . ."></input>
+              {nameState ? (
+                <p className="text-white m-0">{nameState}</p>
+              ) : (
+                <input value={nameState} onChange={(event) => setNameState(event.target.value)} className="input-name" type="name" id="fname" name="firstname" placeholder="Your name. . ."></input>
+              )}
             </div>
           </div>
 
@@ -239,23 +245,8 @@ const BsList = () => {
             <div className="col-25">
               <label htmlFor="country">Kabupaten / Kota</label>
             </div>
-            <div className="col-75">
-              {/* <select id="country" name="country" onChange={(event) => setCityState(event.target.value)} value={cityState}>
-                {cities.map((option) => (
-                  <option key={option.id} value={option.name}>
-                    {option.name}
-                  </option>
-                ))}
-              </select> */}
-              {/* <input class="form-control" list="datalistOptions" onChange={(event) => setCityState(event.target.value)} value={cityState}></input>
-              <datalist id="datalistOptions">
-                {cities.map((option) => (
-                  <option key={option.id} value={option.name}>
-                    {option.name}
-                  </option>
-                ))}
-              </datalist> */}
-
+            <div className="col-75">{cityState && <p className="text-white m-0">{cityState}</p>}</div>
+            <div className={`col-75 ${cityState ? "d-none" : ""}`}>
               <Autocomplete
                 className="input-name"
                 disablePortal
