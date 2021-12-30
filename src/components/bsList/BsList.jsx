@@ -245,7 +245,12 @@ const BsList = () => {
             <div className="col-25">
               <label htmlFor="country">Kabupaten / Kota</label>
             </div>
-            <div className="col-75">{cityState && <p className="text-white m-0">{cityState}</p>}</div>
+            {cityState && (
+              <div className="col-75">
+                {" "}
+                <p className="text-white m-0">{cityState}</p>
+              </div>
+            )}
             <div className={`col-75 ${cityState ? "d-none" : ""}`}>
               <Autocomplete
                 className="input-name"
@@ -298,7 +303,7 @@ const BsList = () => {
           </div>
 
           <div className="row">
-            <div className="">
+            <div className="col-75">
               <button onClick={(event) => sendMessage(event.preventDefault())} type="submit" className="button-global-primary mt-4">
                 Kirim
               </button>
