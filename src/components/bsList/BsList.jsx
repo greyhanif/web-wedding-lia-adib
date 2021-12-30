@@ -72,6 +72,7 @@ const BsList = () => {
     let mounted = true;
     setLoading(true);
     fetchDataMessages();
+    getDataM();
     return function cleanup(mounted) {
       mounted = false;
     };
@@ -88,7 +89,7 @@ const BsList = () => {
     let mounted = true;
     // sendMessage();
     makeid();
-    getDataM();
+
     alertMsg();
     return function cleanup() {
       mounted = false;
@@ -233,8 +234,8 @@ const BsList = () => {
               <label htmlFor="fname">Nama Lengkap</label>
             </div>
             <div className="col-75">
-              {nameState ? (
-                <p className="text-white m-0">{nameState}</p>
+              {sessionStorage.getItem("name") ? (
+                <p className="text-white m-0">{sessionStorage.getItem("name")}</p>
               ) : (
                 <input value={nameState} onChange={(event) => setNameState(event.target.value)} className="input-name" type="name" id="fname" name="firstname" placeholder="Your name. . ."></input>
               )}
@@ -245,13 +246,13 @@ const BsList = () => {
             <div className="col-25">
               <label htmlFor="country">Kabupaten / Kota</label>
             </div>
-            {cityState && (
+            {sessionStorage.getItem("city") && (
               <div className="col-75">
                 {" "}
-                <p className="text-white m-0">{cityState}</p>
+                <p className="text-white m-0">{sessionStorage.getItem("city")}</p>
               </div>
             )}
-            <div className={`col-75 ${cityState ? "d-none" : ""}`}>
+            <div className={`col-75 ${sessionStorage.getItem("city") ? "d-none" : ""}`}>
               <Autocomplete
                 className="input-name"
                 disablePortal
@@ -303,7 +304,7 @@ const BsList = () => {
           </div>
 
           <div className="row">
-            <div className="col-75">
+            <div className="">
               <button onClick={(event) => sendMessage(event.preventDefault())} type="submit" className="button-global-primary mt-4">
                 Kirim
               </button>
