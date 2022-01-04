@@ -51,11 +51,13 @@ const UserNav = () => {
                     <div className="ml-3 wedding">wedding</div>
                   </div>
                   <div className="">
-                    <QRCode className="qr" level="L" size={200} bgColor="#fcf7f1" fgColor="#000000" value={sessionStorage.getItem("ticketCode")} />
+                    <QRCode className="qr" level="L" size={170} bgColor="#fcf7f1" fgColor="#000000" value={sessionStorage.getItem("ticketCode")} />
                     {/* <img className="qr" src="https://socs.binus.ac.id/files/2018/12/aswin-1.jpg" alt="" /> */}
                     <div className="ml-3 code-ticket mt-2">{sessionStorage.getItem("ticketCode")}</div>
-                    <div className="ml-3 name bold">{sessionStorage.getItem("name")}</div>
-                    <div className="ml-3 city mt-1">{sessionStorage.getItem("city")}</div>
+                    <div className="ml-3 name bold">
+                      {sessionStorage.getItem("title") === "null" ? "" : sessionStorage.getItem("title")} {sessionStorage.getItem("name")}
+                    </div>
+                    <div className="ml-3 city mt-1">{sessionStorage.getItem("city") === "null" ? sessionStorage.getItem("organization") : sessionStorage.getItem("city")}</div>
                   </div>
                 </div>
                 <Button className="button" onClick={handleClose} fullWidth size="large" variant="contained" color="secondary">
@@ -70,10 +72,10 @@ const UserNav = () => {
       <AppBar color="primary" position="fixed">
         <Toolbar>
           <Button color="inherit" component="div" sx={{ flexGrow: 1 }}>
-            Kepada, {sessionStorage.getItem("name")}
+            Kepada, {sessionStorage.getItem("title") === "null" ? "" : sessionStorage.getItem("title")} {sessionStorage.getItem("name")}
           </Button>
           <Button onClick={handleOpen} color="secondary" variant="contained" startIcon={<QrCode2OutlinedIcon />} disableElevation>
-            QR CODE
+            CODE
           </Button>
           {/* <BottomNavigationAction href="#section-pesan-doa" label="Pesan" icon={<MessageIcon />} /> */}
           {/* <Button color="inherit">QR Code</Button> */}

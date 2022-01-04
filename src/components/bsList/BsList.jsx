@@ -62,7 +62,9 @@ const BsList = () => {
   const [msg, setMsg] = useState([]);
   const [msgNull, setMsgNull] = useState([]);
   const [idState, setIdState] = useState(sessionStorage.getItem("id"));
+  const [titleState, setTitleState] = useState(sessionStorage.getItem("title"));
   const [nameState, setNameState] = useState(sessionStorage.getItem("name"));
+  const [organizationState, setOrganizationState] = useState(sessionStorage.getItem("organization"));
   const [cityState, setCityState] = useState("");
   const [messageState, setMessageState] = useState("");
   const [confirmState, setConfirmState] = useState("yes");
@@ -99,8 +101,10 @@ const BsList = () => {
   function getDataM() {
     if (sessionStorage.getItem("name")) {
       setIdState(sessionStorage.getItem("id") ? sessionStorage.getItem("id") : "Mendapatkan Data . . .");
+      setTitleState(sessionStorage.getItem("title") ? sessionStorage.getItem("title") : "Mendapatkan Data . . .");
       setNameState(sessionStorage.getItem("name") ? sessionStorage.getItem("name") : "Mendapatkan Data . . .");
       setCityState(sessionStorage.getItem("city") ? sessionStorage.getItem("city") : "Mendapatkan Data . . .");
+      setCityState(sessionStorage.getItem("organization") ? sessionStorage.getItem("organization") : "Mendapatkan Data . . .");
       return 0;
     }
   }
@@ -109,8 +113,8 @@ const BsList = () => {
 
     const payload = {
       contactId: idState,
-      name: nameState,
-      city: cityState,
+      name: titleState === "null" ? nameState : titleState + " " + nameState,
+      city: cityState === "null" ? organizationState : cityState,
       message: messageState,
       willBePresent: confirmState,
     };
@@ -235,7 +239,10 @@ const BsList = () => {
             </div>
             <div className="col-75">
               {sessionStorage.getItem("name") ? (
-                <p className="text-white m-0">{sessionStorage.getItem("name")}</p>
+                <p className="text-white m-0">
+                  {sessionStorage.getItem("title") === "null" ? "" : sessionStorage.getItem("title") + " "}
+                  {sessionStorage.getItem("name")}
+                </p>
               ) : (
                 <input value={nameState} onChange={(event) => setNameState(event.target.value)} className="input-name" type="name" id="fname" name="firstname" placeholder="Your name. . ."></input>
               )}
@@ -248,8 +255,7 @@ const BsList = () => {
             </div>
             {sessionStorage.getItem("city") && (
               <div className="col-75">
-                {" "}
-                <p className="text-white m-0">{sessionStorage.getItem("city")}</p>
+                <p className="text-white m-0">{sessionStorage.getItem("city") === "null" ? sessionStorage.getItem("organization") : sessionStorage.getItem("city")}</p>
               </div>
             )}
             <div className={`col-75 ${sessionStorage.getItem("city") ? "d-none" : ""}`}>

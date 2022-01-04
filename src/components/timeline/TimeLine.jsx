@@ -53,7 +53,7 @@ const TimeLine = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <p className="detail-timeline">Hiburan (Tari Gambyong)</p>
+            <p className="detail-timeline">Hiburan</p>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>

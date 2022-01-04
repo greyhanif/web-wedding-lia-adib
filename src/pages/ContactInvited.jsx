@@ -29,9 +29,11 @@ export default function ContactInvited() {
   const endPoint = `${process.env.REACT_APP_API_URL}/apps/` + slug;
 
   const [id, setId] = useState("");
+  const [title, setTitle] = useState("");
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
+  const [organization, setOrganization] = useState("");
   const [msg, setMsg] = useState("");
   const [ticketCode, setTicketCode] = useState("");
 
@@ -43,9 +45,11 @@ export default function ContactInvited() {
         return navigate("/");
       } else {
         setId(res.data.contacts[0].id);
+        setTitle(res.data.contacts[0].title);
         setName(res.data.contacts[0].name);
         setAddress(res.data.contacts[0].address);
         setCity(res.data.contacts[0].city);
+        setOrganization(res.data.contacts[0].organization);
         setTicketCode(res.data.tickets[0].ticketCode);
       }
     });
@@ -54,9 +58,11 @@ export default function ContactInvited() {
     };
   }, []);
   sessionStorage.setItem("id", id);
+  sessionStorage.setItem("title", title);
   sessionStorage.setItem("name", name);
   sessionStorage.setItem("address", address);
   sessionStorage.setItem("city", city);
+  sessionStorage.setItem("organization", organization);
   sessionStorage.setItem("ticketCode", ticketCode);
 
   return (
